@@ -1,0 +1,235 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #3a506b;
+    color: #f8f8f8;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d4e157;
+}
+
+/* Navigation */
+nav {
+    background: #264653;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e9c46a;
+}
+
+/* Hero Section */
+#hero {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: linear-gradient(240deg, #f8e371, #3a506b 60%);
+    color: #333;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hero a {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #e76f51;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 40%;
+    margin: 1.6rem 40%;
+    text-decoration: none;
+}
+
+#hero a:hover {
+    background-color: #2a9d8f;
+}
+#hero img{
+    margin: 1.6rem 37%;
+}
+
+/* Sections */
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 1.5rem;
+}
+
+section span {
+    color: #e9c46a;
+}
+
+#about{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#about p, .service-item p {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem;
+}
+
+
+/* Services Section */
+.services{
+    text-align: center;
+    
+}
+
+#services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 2px;
+    ;
+
+}
+
+.service-item {
+    background: #f8f8f8;
+    padding: 2rem;
+    border: 2px solid #264653;
+    border-radius: 8px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.service-item button{
+    padding: 1.6rem 2rem;
+    border-radius: 6%;
+}
+.service-item button:hover{
+    transform: scale(1.05);
+}
+
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #3a506b;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #264653;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background-color: #3a506b;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #264653;
+}
+
+/* Footer */
+footer {
+    background: #3a506b;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #home, section, form {
+        padding: 2rem 1rem;
+    }
+
+    .services-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
